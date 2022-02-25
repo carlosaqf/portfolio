@@ -1,21 +1,23 @@
 import * as React from "react"
-import "../scss/styles.scss"
 import Layout from '../components/layout'
+import GlobalStyle from "../styles/global"
 
-// markup
 const IndexPage = () => {
   return (
-    <Layout>
-      <main>
-        <title>Home Page</title>
-        <h1>
-          <span className="test">Hello World!</span>
-          <br />
-          <span>— you just made a Gatsby site! </span>
-          🎉🎉🎉
-        </h1>
-      </main>
-    </Layout>
+    <>
+      <Layout>
+        <main>
+          <title>Home Page</title>
+          <h1>
+            <span className="test">Hello World!</span>
+            <br />
+            <span>— you just made a Gatsby site! </span>
+            🎉🎉🎉
+          </h1>
+        </main>
+      </Layout>
+      <GlobalStyle />
+    </>
   )
 }
 
