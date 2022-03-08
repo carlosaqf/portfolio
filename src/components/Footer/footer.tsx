@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 				</FooterLinks>
 
 				<FooterCopyRight>
-					&copy; {new Date().getFullYear()} <span id='name'>Carlos Fegurgur</span>
+					&copy; {new Date().getFullYear()} <span id='name'>Carlos Fegurgur</span>. All Rights Reserved.
 				</FooterCopyRight>
 			</Wrapper>
 		</>

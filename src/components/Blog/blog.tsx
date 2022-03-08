@@ -1,11 +1,13 @@
 import React from 'react'
+import { BlogWrapper } from './blog.styles'
+import { Header } from '../index'
 
 const Blog:React.FC = () => {
 	return(
 		<>
-			<div>
-				Blog
-			</div>
+			<BlogWrapper>
+				<Header id='blog'>Blog</Header>
+			</BlogWrapper>
 		</>
 	)
 }

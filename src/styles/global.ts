@@ -36,7 +36,7 @@ export const Container = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	/* height: 100vh; */
 	
 	@media (max-width: 25rem){
 		padding: 0 0.625rem;

@@ -5,12 +5,21 @@ const Navbar:React.FC = () => {
 
 	const [open, setOpen] = useState(false);
 
-	const openHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+	const handleMenuButton = (event: React.MouseEvent<HTMLButtonElement>) => {
 		event.preventDefault();
 		setOpen(!open);	
 		
 		const menu = document.getElementById('menu');
-		// document.getElementById('menu').classList.toggle('hidden');
+
+		if (menu){
+			menu.classList.toggle('hidden');
+		}
+	}
+
+	const handleMenuLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		setOpen(!open);	
+		
+		const menu = document.getElementById('menu');
 
 		if (menu){
 			menu.classList.toggle('hidden');
@@ -22,21 +31,23 @@ const Navbar:React.FC = () => {
 		<>
 			<Wrapper className='navbar'>
 				<Logo href="/"><NavLogo /></Logo>
-				<NavLink href="/projects">Projects</NavLink>
-				<NavLink href="/blog">Blog</NavLink>
-				<NavLink href="/about">About</NavLink>
-				<NavLink href="/contact">Contact</NavLink>
+				<NavLink href="#projects">Projects</NavLink>
+				<NavLink href="#blog">Blog</NavLink>
+				<NavLink href="#about">About</NavLink>
+				<NavLink href="#contact">Contact</NavLink>
 				
-				<MenuButton onClick={openHandler}>
+				<MenuButton onClick={handleMenuButton}>
 					{open ? <NavExit /> : <NavMenu /> }
 				</MenuButton>
 				
 				 
 				<MenuWrapper id='menu' className='hidden'>
-					<MenuLink href="/projects">Projects</MenuLink>
-					<MenuLink href="/blog">Blog</MenuLink>
-					<MenuLink href="/about">About</MenuLink>
-					<MenuLink href="/contact">Contact</MenuLink>
+					<ul>
+						<li><MenuLink href="#projects" onClick={handleMenuLink}>Projects</MenuLink></li>
+						<li><MenuLink href="#blog" onClick={handleMenuLink}>Blog</MenuLink></li>
+						<li><MenuLink href="#about" onClick={handleMenuLink}>About</MenuLink></li>
+						<li><MenuLink href="#contact" onClick={handleMenuLink}>Contact</MenuLink></li>
+					</ul>
 				</MenuWrapper>
 
 			</Wrapper>

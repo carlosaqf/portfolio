@@ -1,12 +1,13 @@
 import React from 'react'
-import { Wrapper, SectionHeader } from '../Projects/projects.styles'
+import { ProjectWrapper } from './projects.styles'
+import { Header } from '../index'
 
 const Projects:React.FC = () => {
 	return(
 		<>
-			<Wrapper>
-				<SectionHeader>Proj<span id="underline">ects</span></SectionHeader>
-			</Wrapper>
+			<ProjectWrapper>
+				<Header id='projects'>Projects</Header>
+			</ProjectWrapper>
 		</>
 	)
 }
