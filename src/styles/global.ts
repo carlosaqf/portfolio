@@ -25,13 +25,6 @@ const GlobalStyle = createGlobalStyle`
 	body{
 		overflow-x: hidden;
 	}
-
-	h3{
-		font-size: 36px;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-family: 'Noto Serif';
-		font-weight: 400;
-	}
 `
 
 export default GlobalStyle

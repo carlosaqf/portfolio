@@ -21,10 +21,11 @@ export const Wrapper = styled.nav`
 `
 
 export const NavLink = styled.a`
-	border-radius: 2rem;
 	color: ${colors.light};
 	padding: 0.5rem 1rem;
 	text-decoration: none;
+	font-size: 24px;
+	font-family: 'Noto Serif';
 
 	@media(max-width: 768px){
 		display: none;
@@ -68,6 +69,8 @@ export const MenuLink = styled.a`
 	color: ${colors.light};
 	text-decoration: none;
 	display: none;
+	font-size: 36px;
+	font-family: 'Noto Serif';
 
 	&:hover{
 		color: ${colors.primary};
@@ -108,18 +111,6 @@ export const MenuButton = styled.button`
 /**
  * SVG Icons
  */
-// export const CancelIcon = styled(CancelIconSVG)`
-// 	height: 1.75rem;
-// 	width: 1.75rem;
-// 	color: ${colors.light};
-// `
-
-// export const MenuIcon = styled(MenuIconSVG)`
-// 	height: 1.75rem;
-// 	width: 1.75rem;
-// 	fill: ${colors.light};
-// `
-
 export const NavMenu = styled(NavMenuSVG)`
 	height: 2rem;
 	width: 2rem;

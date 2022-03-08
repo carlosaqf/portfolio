@@ -1,15 +1,11 @@
 import React from 'react'
-import { Wrapper, Top, Bottom, FooterLink } from './footer.styles'
+import { Wrapper, FooterCopyRight, FooterLinks, FooterLink } from './footer.styles'
 
 const Footer: React.FC = () => {
 	return(
 		<>
 			<Wrapper>
-				<Top>
-					&copy; {new Date().getFullYear()} Carlos Fegurgur
-				</Top>
-
-				<Bottom>
+				<FooterLinks>
 					<FooterLink href="https://www.github.com/carlosaqf" target="_blank">
 						Github
 					</FooterLink>
@@ -22,7 +18,11 @@ const Footer: React.FC = () => {
 					<FooterLink href="/contact">
 						Contact
 					</FooterLink>
-				</Bottom>
+				</FooterLinks>
+
+				<FooterCopyRight>
+					&copy; {new Date().getFullYear()} <span id='name'>Carlos Fegurgur</span>
+				</FooterCopyRight>
 			</Wrapper>
 		</>
 	)

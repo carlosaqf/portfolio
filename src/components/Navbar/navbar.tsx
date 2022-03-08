@@ -22,9 +22,9 @@ const Navbar:React.FC = () => {
 		<>
 			<Wrapper className='navbar'>
 				<Logo href="/"><NavLogo /></Logo>
-				<NavLink href="/about">About</NavLink>
 				<NavLink href="/projects">Projects</NavLink>
 				<NavLink href="/blog">Blog</NavLink>
+				<NavLink href="/about">About</NavLink>
 				<NavLink href="/contact">Contact</NavLink>
 				
 				<MenuButton onClick={openHandler}>
@@ -33,10 +33,10 @@ const Navbar:React.FC = () => {
 				
 				 
 				<MenuWrapper id='menu' className='hidden'>
-					<MenuLink href="/about"><h3>About</h3></MenuLink>
-					<MenuLink href="/projects"><h3>Projects</h3></MenuLink>
-					<MenuLink href="/blog"><h3>Blog</h3></MenuLink>
-					<MenuLink href="/contact"><h3>Contact</h3></MenuLink>
+					<MenuLink href="/projects">Projects</MenuLink>
+					<MenuLink href="/blog">Blog</MenuLink>
+					<MenuLink href="/about">About</MenuLink>
+					<MenuLink href="/contact">Contact</MenuLink>
 				</MenuWrapper>
 
 			</Wrapper>
