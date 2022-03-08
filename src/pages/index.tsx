@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from '../components/layout'
-import GlobalStyle from "../styles/global"
 
 const IndexPage = () => {
   return (
@@ -16,7 +15,6 @@ const IndexPage = () => {
           </h1>
         </main>
       </Layout>
-      <GlobalStyle />
     </>
   )
 }

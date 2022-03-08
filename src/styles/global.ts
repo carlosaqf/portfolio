@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -9,7 +9,9 @@ const GlobalStyle = createGlobalStyle`
 		padding: 0;
 		outline: 0;
 		box-sizing: border-box;
-		font-family: 'Open Sans', sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-size: 16px;
+		overflow-x: hidden;
 	}
 
 	#root{
@@ -18,7 +20,17 @@ const GlobalStyle = createGlobalStyle`
 
 	html{
 		box-sizing: border-box;
+	}
 
+	body{
+		overflow-x: hidden;
+	}
+
+	h3{
+		font-size: 36px;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: 'Noto Serif';
+		font-weight: 400;
 	}
 `
 
@@ -27,23 +39,17 @@ export default GlobalStyle
 export const Container = styled.div`
 	margin: 0 auto;
 	padding: 0 3.125rem;
-	max-width: 81.25rem;
+	max-width: 70rem; // 81.25
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 	
 	@media (max-width: 25rem){
 		padding: 0 0.625rem;
 	}
 
 	@media (max-width: 61.938rem){
-		padding: 0 1.875rem;
-	}
-
-	@media (max-width: 93.75rem){
-		max-width: 93.75rem;
-	}
-
-	@media (max-width: 112.5rem){
-		max-width: 112.5rem;
 		padding: 0 1.875rem;
 	}
 `
