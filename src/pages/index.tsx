@@ -1,21 +1,20 @@
 import * as React from "react"
-import "../scss/styles.scss"
 import Layout from '../components/layout'
+import { Hero, Projects, Blog, About, Contact } from '../components'
 
-// markup
 const IndexPage = () => {
   return (
-    <Layout>
-      <main>
-        <title>Home Page</title>
-        <h1>
-          <span className="test">Hello World!</span>
-          <br />
-          <span>— you just made a Gatsby site! </span>
-          🎉🎉🎉
-        </h1>
-      </main>
-    </Layout>
+    <>
+      <Layout>
+        <main>
+          <Hero />  
+          <Projects />
+          <Blog />
+          <About />
+          <Contact />
+        </main>
+      </Layout>
+    </>
   )
 }
 

@@ -6,7 +6,7 @@ Potential Tech Stack:
 
 - React
 - Gatbsy
-- Sass
+- Styled Components
 - Typescript
 - GraphQL
 - Headless CMS (TBD)
