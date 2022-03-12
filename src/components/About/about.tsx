@@ -1,12 +1,14 @@
 import React from 'react'
-import { SectionHeader, Wrapper } from './about.styles'
+import { AboutWrapper } from './about.styles'
+import { Header } from '../index'
 
 const About:React.FC = () => {
+
 	return(
 		<>
-			<Wrapper>
-				<SectionHeader>Ab<span id='underline'>out</span></SectionHeader>
-			</Wrapper>
+			<AboutWrapper>
+				<Header id='about'>About</Header>
+			</AboutWrapper>
 		</>
 	)
 }

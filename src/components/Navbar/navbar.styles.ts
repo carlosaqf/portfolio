@@ -10,7 +10,7 @@ import { colors } from '../../styles/colors'
 export const Wrapper = styled.nav`
 	display: flex;
 	align-items: center;
-	margin-bottom: 5rem;
+	margin-bottom: 1rem;
 	background-color: ${colors.dark};
 	padding: 1rem 3.125rem 1rem 3.125rem;
 	box-shadow: ${colors.boxShadow};
@@ -24,8 +24,8 @@ export const NavLink = styled.a`
 	color: ${colors.light};
 	padding: 0.5rem 1rem;
 	text-decoration: none;
-	font-size: 24px;
-	font-family: 'Noto Serif';
+	font-size: 1.25rem;
+	font-family: 'Montserrat';
 
 	@media(max-width: 768px){
 		display: none;
@@ -52,10 +52,9 @@ export const MenuWrapper = styled.nav.attrs(props => ({
 	width: 100%;
 	top: 4.813rem;
 	left: 0;
-	height: 50vh;
+	height: 100%;
 	background-color: ${colors.dark};
 	display: none;
-	padding: 1.5rem;
 
 	&.hidden{
 		display: none;
@@ -64,18 +63,33 @@ export const MenuWrapper = styled.nav.attrs(props => ({
 	@media(max-width: 768px){
 		display: block;
 	}
+
+
+	ul{
+		list-style-type: none;
+		width: 100%;
+	}
+
+	ul > li{
+		padding: 1.5rem;
+
+		&:hover{
+			background-color: ${colors.light};
+			transition: 300ms;
+
+			a{
+				color: ${colors.primary};
+				transition: 300ms;
+			}
+		}
+	}
 `
 export const MenuLink = styled.a`
 	color: ${colors.light};
 	text-decoration: none;
 	display: none;
-	font-size: 36px;
-	font-family: 'Noto Serif';
-
-	&:hover{
-		color: ${colors.primary};
-		transition: 300ms;
-	}
+	font-size: 1.5rem;
+	font-family: 'Montserrat';
 
 	@media(max-width: 768px){
 		display: block;

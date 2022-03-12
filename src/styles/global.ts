@@ -31,18 +31,15 @@ export default GlobalStyle
 
 export const Container = styled.div`
 	margin: 0 auto;
-	padding: 0 3.125rem;
-	max-width: 70rem; // 81.25
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr min(80%, 43.75rem) 1fr;
 	
 	@media (max-width: 25rem){
-		padding: 0 0.625rem;
+		/* padding: 0 0.625rem; */
 	}
 
 	@media (max-width: 61.938rem){
-		padding: 0 1.875rem;
+		/* padding: 0 1.875rem; */
 	}
 `

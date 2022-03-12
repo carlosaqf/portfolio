@@ -6,13 +6,11 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <main>
-          <Hero />  
-          <Projects />
-          <Blog />
-          <About />
-          <Contact />
-        </main>
+        <Hero />  
+        <Projects />
+        <Blog />
+        <About />
+        <Contact />
       </Layout>
     </>
   )
