@@ -1,11 +1,24 @@
 import React from 'react'
+import { StyledLink, StyledButton } from './button.styles'
 
-const Button:React.FC = () => {
+interface ButtonProps{
+	link?: string;
+	text?: string;
+}
+
+const Button:React.FC <ButtonProps> = ({ link, text }) => {
+
 	return(
 		<>
-			<div>
-				Button
-			</div>
+			{ link ? 
+				<StyledLink href={link}>
+					{text}
+				</StyledLink> 
+			: 
+				<StyledButton>
+					{text}
+				</StyledButton>
+			}
 		</>
 	)
 }

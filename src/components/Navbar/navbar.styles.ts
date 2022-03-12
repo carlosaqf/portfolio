@@ -10,7 +10,7 @@ import { colors } from '../../styles/colors'
 export const Wrapper = styled.nav`
 	display: flex;
 	align-items: center;
-	margin-bottom: 5rem;
+	margin-bottom: 1rem;
 	background-color: ${colors.dark};
 	padding: 1rem 3.125rem 1rem 3.125rem;
 	box-shadow: ${colors.boxShadow};

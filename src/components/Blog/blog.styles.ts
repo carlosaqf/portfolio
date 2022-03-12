@@ -7,4 +7,6 @@ export const BlogWrapper = styled.div`
 	h3{
 		color: ${colors.dark};
 	}
+
+	grid-column: 2;
 `

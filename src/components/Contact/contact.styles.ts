@@ -7,4 +7,6 @@ export const ContactWrapper = styled.div`
 	h3{
 		color: ${colors.dark};
 	}
+
+	grid-column: 2;
 `
